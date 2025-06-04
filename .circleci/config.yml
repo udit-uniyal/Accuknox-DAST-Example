@@ -21,10 +21,10 @@ workflows:
           TAG: slim
           SOFT_FAIL: true
       - accuknox-scan/dast:
+          context: dast-context
           SOFT_FAIL: true
           TARGET_URL: "http://testphp.vulnweb.com"
-          environment:
-            ACCUKNOX_LABEL: "dastcii"
+
 
 # jobs:
 #   build-docker-image:
