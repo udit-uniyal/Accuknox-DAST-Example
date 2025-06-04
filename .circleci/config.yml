@@ -23,6 +23,8 @@ workflows:
       - accuknox-scan/dast:
           SOFT_FAIL: true
           TARGET_URL: "http://testphp.vulnweb.com"
+          environment:
+            ACCUKNOX_LABEL: "dastcii"
 
 # jobs:
 #   build-docker-image:
